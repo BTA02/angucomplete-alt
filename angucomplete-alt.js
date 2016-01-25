@@ -396,21 +396,21 @@
               inputField.val(scope.searchStr);
             });
           }
-        } else if (which === KEY_TAB) {
-          if (scope.results && scope.results.length > 0 && scope.showDropdown) {
-            if (scope.currentIndex === -1 && scope.overrideSuggestions) {
-              // intentionally not sending event so that it does not
-              // prevent default tab behavior
-              handleOverrideSuggestions();
-            }
-            else {
-              if (scope.currentIndex === -1) {
-                scope.currentIndex = 0;
-              }
-              scope.selectResult(scope.results[scope.currentIndex]);
-              scope.$digest();
-            }
-          }
+        // } else if (which === KEY_TAB) {
+        //   if (scope.results && scope.results.length > 0 && scope.showDropdown) {
+        //     if (scope.currentIndex === -1 && scope.overrideSuggestions) {
+        //       // intentionally not sending event so that it does not
+        //       // prevent default tab behavior
+        //       handleOverrideSuggestions();
+        //     }
+        //     else {
+        //       if (scope.currentIndex === -1) {
+        //         scope.currentIndex = 0;
+        //       }
+        //       scope.selectResult(scope.results[scope.currentIndex]);
+        //       scope.$digest();
+        //     }
+        //   }
           else {
             // no results
             // intentionally not sending event so that it does not
